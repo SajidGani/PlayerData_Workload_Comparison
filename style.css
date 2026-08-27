@@ -1,0 +1,47 @@
+/* Main background and text */
+.stApp {
+    background-color: #f4f6f8;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #0F2044;
+}
+
+/* Target only text labels in the sidebar so dropdown text stays dark */
+[data-testid="stSidebar"] p, 
+[data-testid="stSidebar"] h1, 
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3, 
+[data-testid="stSidebar"] label {
+    color: white !important;
+}
+
+/* Ensure dropdown options remain visible */
+div[data-baseweb="select"] * {
+    color: #000000 !important;
+}
+
+/* UNCG Gold for headers */
+h1, h2, h3 {
+    color: #0F2044 !important;
+}
+h1 span, h2 span, h3 span {
+    border-bottom: 3px solid #FFB71B;
+    padding-bottom: 5px;
+}
+
+/* Style the Tabs */
+div[data-baseweb="tab_list"] {
+    gap: 10px;
+}
+div[data-baseweb="tab"] {
+    background-color: transparent !important;
+    border: none !important;
+    color: #0F2044 !important;
+    font-weight: bold;
+}
+div[aria-selected="true"] {
+    color: #FFB71B !important;
+    border-bottom: 4px solid #FFB71B !important;
+}
